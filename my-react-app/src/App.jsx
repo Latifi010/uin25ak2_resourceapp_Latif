@@ -1,20 +1,25 @@
 import React from 'react';
 
 import { Routes, Route, Navigate } from 'react-router-dom';
+// Valgt å legge til en egen komponent for navigasjonen, for å blant annet gjøre det enklere å legge til flere sider senere.
+// samt for å gjøre det enklere å endre på navigasjonen. 
 
-import Nav from './components/nav';
-import PageTitle from './components/pagetitle';
-import Resources from './components/resources';
+import Nav from './components/nav';  // Importerer navigasjonskomponenten
+import PageTitle from './components/pagetitle'; // Importerer komponenten for sidetittel
+import Resources from './components/resources'; // Importerer komponenten for ressurser
 
-import './styles/styles.scss';
+import './styles/styles.scss'; // Importerer styles.scss
 
-function App() {
+function App() { // Funksjonen som returnerer JSX
+
+  //ingen grunn til å manuelt lukke Navigate, siden det er en enkel komponent som ikke har noen barn. 
+  // 
   return (
     <>
        <Nav />
-      <main>
-        <Routes>
-          <Route path="/" element={<Navigate to="/html" />} />
+      <main> 
+        <Routes> 
+          <Route path="/" element={<Navigate to="/html" />} /> 
           <Route
             path="/html"
             element={
@@ -66,4 +71,4 @@ function App() {
   )
 }
 
-export default App
+export default App // Eksporterer App-funksjonen

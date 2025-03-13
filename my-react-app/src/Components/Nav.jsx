@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Nav = () => {
+const Nav = () => { // Funksjonen Nav returnerer en nav-tag med lenker til de ulike kategoriene
   return (
     <header>
       <nav>
@@ -15,4 +15,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Nav; // Eksporterer Nav-funksjonen
