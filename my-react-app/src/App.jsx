@@ -18,6 +18,7 @@ function App() { // Funksjonen som returnerer JSX
     <>
        <Nav />
       <main> 
+
         <Routes> 
           <Route path="/" element={<Navigate to="/html" />} /> 
           <Route
@@ -29,6 +30,7 @@ function App() { // Funksjonen som returnerer JSX
               </>
             }
           />
+
           <Route
             path="/css"
             element={
@@ -38,6 +40,7 @@ function App() { // Funksjonen som returnerer JSX
               </>
             }
           />
+
           <Route
             path="/javascript"
             element={
@@ -47,6 +50,7 @@ function App() { // Funksjonen som returnerer JSX
               </>
             }
           />
+
           <Route
             path="/react"
             element={
@@ -56,6 +60,7 @@ function App() { // Funksjonen som returnerer JSX
               </>
             }
           />
+
           <Route
             path="/sanity"
             element={
@@ -65,6 +70,7 @@ function App() { // Funksjonen som returnerer JSX
               </>
             }
           />
+
         </Routes>
       </main>
     </>

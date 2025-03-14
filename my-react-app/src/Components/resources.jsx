@@ -6,9 +6,14 @@ const Resources = ({ category }) => { // Funksjonen Resources returnerer en list
 
   return (
     <ul className="ressurser-list">
-      {filteredResources.map((resource, index) => (
-        <li key={index}>
-          <a href={resource.url} target="_blank" rel="noopener noreferrer">
+      {filteredResources.map((resource, index) => ( 
+      //Bruker map på link linje som tidligere, for å loope igjennom listen. 
+      //Bruker index som key, ettersom det i dette tilfellet er en stastisk liste, 
+      //a - Lager hyperlink - Linken peker til resource.url - 
+      //Blank - Sørger for at linken åpner i egen fane. 
+
+        <li key={index}> 
+          <a href={resource.url} target="_blank" rel="buhu">
             {resource.title}
           </a>
         </li>
